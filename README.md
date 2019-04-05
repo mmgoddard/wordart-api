@@ -32,7 +32,7 @@ some test coverage that has been completed but there is still work to do in rega
 # API
 
 Definition:
-        GET /wordart?text=Hello%20World&format=PNG&fontColour=RED&font=ARIAL&effects=SHADOW_HARD
+GET /wordart?text=Hello%20World&format=PNG&fontColour=RED&font=ARIAL&effects=SHADOW_HARD
 
 ### Parameters:
 text: free text up to 20 characters long.
