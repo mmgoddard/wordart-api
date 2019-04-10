@@ -24,7 +24,7 @@ Reference: https://www.imagemagick.org
 The solution involves one endpoint which accepts a string of text along with the formatting
 parameters, font, fontColour, effects & format and will download the image in the
 format specified in the request. The application is using the Spring Boot framework. Some 
-test coverage that has been completed but there is still work to do in regards to this.
+test coverage has been completed but there is still work to do in regards to this.
 
 ## API
 
