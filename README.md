@@ -47,11 +47,22 @@ GET /wordart?text=Hello World&format=PNG&fontColour=RED&font=ARIAL&effects=SHADO
 ### Example Response:
 A download of the image that was generated.
 
-### Running
+# Running
+
 The application runs on port 8080. It runs on the Jetty plugin and builds
-a WAR file.
-Alternatively, you can run through IDE using the Application.java as the main class.
-There is also a Postman collection which you might also find useful.
+a JAR file. Alternatively, you can run through IDE using the Application.java
+as the main class. There is also a Postman collection which you might also find useful.
+
+# Running through Docker
+
+The following commands will build a docker image using the spotify/docker-maven-plugin. The
+docker image configures a runtime environment including alpine a stripped down version of linux,
+java8 & ImageMagick7.
+Reference: https://github.com/spotify/docker-maven-plugin
+
+- Creates docker image: mvn clean package dockerfile:build
+- Start the app: docker run -d -p 8080:8080 -t mmgoddard/wordart-api
+- Using postman we can hit it using localhost and port 8080
 
 # Code Features
 
